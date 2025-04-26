@@ -1,4 +1,4 @@
-# COG 변환기 (Cloud Optimized GeoTIFF Converter)
+![event-driven-architecture](https://github.com/user-attachments/assets/de30aa4a-38a4-4200-959c-9416967141f0)![public-cloud-architecture](https://github.com/user-attachments/assets/db5961a8-23fa-4ac7-8a22-beaee54bb168)# COG 변환기 (Cloud Optimized GeoTIFF Converter)
 
 위성 영상을 Cloud Optimized GeoTIFF(COG) As a Service 스타일로 변환하는 스프링 부트 기반 백엔드 서비스입니다.
 
@@ -144,6 +144,9 @@ file: [binary file data]
 
 ### Public Cloud 배포 아키텍처
 
+![image](https://github.com/user-attachments/assets/31d65d74-5bf4-48b3-9121-2c6b9e138a5c)
+
+
 
 AWS 클라우드에 해당 서비스를 배포하는 아키텍처는 다음과 같습니다:
 
@@ -178,6 +181,8 @@ AWS 클라우드에 해당 서비스를 배포하는 아키텍처는 다음과 �
 ### 이벤트 기반 처리 아키텍처
 
 API 요청을 통한 처리가 아닌, 원격 저장소에 영상을 업로드했을 때 자동으로 변환이 이루어지는 이벤트 기반 아키텍처:
+![image](https://github.com/user-attachments/assets/80a4939c-2121-40ec-85dd-cac8479a5773)
+
 
 
 1. **이벤트 소스**:
