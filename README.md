@@ -1,4 +1,4 @@
-![event-driven-architecture](https://github.com/user-attachments/assets/de30aa4a-38a4-4200-959c-9416967141f0)![public-cloud-architecture](https://github.com/user-attachments/assets/db5961a8-23fa-4ac7-8a22-beaee54bb168)# COG 변환기 (Cloud Optimized GeoTIFF Converter)
+# COG 변환기 (Cloud Optimized GeoTIFF Converter)
 
 위성 영상을 Cloud Optimized GeoTIFF(COG) As a Service 스타일로 변환하는 스프링 부트 기반 백엔드 서비스입니다.
 
