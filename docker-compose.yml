@@ -1,23 +1,25 @@
-version: '3.8'
-
 services:
   app:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: cogConverterApp
+    container_name: cog-converter-app
     ports:
       - "8080:8080"
     depends_on:
-      - gdalApi
+      - gdalapi
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-      - GDAL_API_URL=http://gdalApi:5000
+      - APP_GDAL_API_URL=http://gdalapi:5000
+    volumes:
+      - ./tempData:/tmp/cogConverter
 
-  gdalApi:
+  gdalapi:
     build:
       context: .
       dockerfile: Dockerfile.gdalApi
-    container_name: cogConverterGdalApi
+    container_name: cog-converter-gdalapi
     ports:
       - "5000:5000"
+    volumes:
+      - ./tempData:/tmp/cogConverter

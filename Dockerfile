@@ -1,6 +1,6 @@
 FROM openjdk:17-jdk-slim
 
-# 임시 디렉토리 생성 (필요한 경우에만)
+# 임시 디렉토리 생성
 RUN mkdir -p /tmp/cogConverter && chmod 777 /tmp/cogConverter
 
 WORKDIR /app

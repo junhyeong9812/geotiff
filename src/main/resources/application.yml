@@ -36,7 +36,7 @@ aws:
 
 app:
   cog:
-    temp-dir: /tmp/cog-converter
+    temp-dir: /tmp/cogConverter
     timeout-millis: 900000
   gdal-api:
     url: http://gdalApi:5000
